@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías y Prácticas Digitales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">TyPD <span>Digital</span></a>
+            </div>
+            
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar modo de color">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#apuntes">Apuntes</a></li>
+                    <li><a href="#word">Procesador de Textos</a></li>
+                    <li><a href="#excel">Planilla de Cálculos</a></li>
+                    <li><a href="#diseno">Diseño Gráfico</a></li>
+                    <li><a href="#video">Edición de Video</a></li>
+                    <li><a href="#audio">Edición de Audio</a></li>
+                    <li><a href="#alumnos" class="btn-alumnos">Trabajos Alumnos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tecnologías y Prácticas Digitales</h1>
+            <p>Espacio digital de aprendizaje, herramientas y proyectos.</p>
+        </div>
+    </section>
+
+    <section class="carousel-section-top">
+        <div class="carousel">
+            <button class="carousel-btn prev-btn" id="prev-btn" aria-label="Imagen anterior">&#10094;</button>
+            
+            <div class="carousel-track-container">
+                <ul class="carousel-track" id="carousel-track">
+                    <li class="carousel-slide active">
+                        <img src="/img/cv_canva.jpg" alt="Alumnos trabajando">
+                        <p class="slide-caption">Clase práctica de Diseño Gráfico en Canva</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/img/diseno_canva.jpg" alt="Trabajo colaborativo">
+                        <p class="slide-caption">Desarrollo de proyectos digitales en equipo</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/img/diseno2.jpg" alt="Presentación de proyectos">
+                        <p class="slide-caption">Exposición de Trabajos Prácticos</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="/img/diseno3.jpg" alt="Programación en el aula">
+                        <p class="slide-caption">Prácticas Realizadas por alumnos</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/diseno4.jpg" alt="Edición audiovisual">
+                        <p class="slide-caption">Talleres interactivos de edición de Audio</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="img/diseno5.jpg">
+                        <p class="slide-caption">Herramientas ofimáticas aplicadas a entornos reales</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <button class="carousel-btn next-btn" id="next-btn" aria-label="Siguiente imagen">&#10095;</button>
+        </div>
+    </section>
+
+
+    <main class="container">
+        
+<section id="apuntes" class="card apuntes-section">
+            <h2><i class="fas fa-book"></i> Apuntes de la Materia</h2>
+            <p class="apuntes-intro">Accedé a la carpeta oficial de la materia en Google Drive para consultar y descargar todos los apuntes teóricos en formato PDF (Hardware, Software, Redes, Ofimática, Canva y más).</p>
+            
+          <div class="apuntes-center-container">
+    <a href="https://drive.google.com/drive/folders/1jaDt4PFuepr1L-Y5mWcGjWWRQgVfRQsJ?usp=drive_link" target="_blank" class="btn-drive-folder">
+        <i class="fab fa-google-drive"></i> Ingresar a la Carpeta de Apuntes
+    </a>
+</div>
+        </section>
+
+        <section id="word" class="card">
+            <div class="card-header-flex">
+                <h2><i class="fas fa-file-word"></i> Procesador de Textos</h2>
+                <a href="https://drive.google.com/drive/folders/1FsyRCYnt4lfW4Qi3Au8ki2qHnexONnNV?usp=sharing" target="_blank" class="btn-small-access" title="Acceder a los ejercicios">
+                    <i class="fas fa-folder-open"></i> Ver Prácticas
+                </a>
+            </div>
+            <p>Ejercicios prácticos para dominar herramientas como <strong>Microsoft Word</strong> y <strong>Google Docs</strong>.</p>
+        </section>
+
+<section id="excel" class="card">
+            <div class="card-header-flex">
+                <h2><i class="fas fa-file-excel"></i> Planilla de Cálculos</h2>
+                <a href="https://drive.google.com/drive/folders/166ZErUUCa6I_zZO8i4ziqUREBtHJOp4z?usp=drive_link" target="_blank" class="btn-small-access btn-excel-color" title="Acceder a los ejercicios">
+                    <i class="fas fa-folder-open"></i> Ver Prácticas
+                </a>
+            </div>
+            <p>Desafíos, fórmulas y funciones aplicadas en entornos profesionales digitales.</p>
+        </section>
+
+ <section id="diseno" class="card">
+            <div class="card-header-flex">
+                <h2><i class="fas fa-paint-brush"></i> Diseño Gráfico</h2>
+                <a href="https://drive.google.com/drive/folders/1dZaLMKZRFtHLACir--nccP78_tsitKoW?usp=sharing" target="_blank" class="btn-small-access btn-design-color" title="Acceder a los ejercicios">
+                    <i class="fas fa-folder-open"></i> Ver Prácticas
+                </a>
+            </div>
+            <p>Proyectos de comunicación visual utilizando herramientas modernas como <strong>Canva</strong> e <strong>Inkscape</strong>.</p>
+        </section>
+
+        <section id="video" class="card">
+            <h2><i class="fas fa-video"></i> Edición de Videos</h2>
+            <p>Técnicas de montaje, cortes, efectos y narración audiovisual.</p>
+        </section>
+
+        <section id="audio" class="card">
+            <h2><i class="fas fa-microphone"></i> Edición de Audio</h2>
+            <p>Producción de podcasts, edición de pistas, efectos sonoros y limpieza de voz.</p>
+        </section>
+
+<section id="contacto" class="card contacto-section">
+            <h2><i class="fas fa-envelope"></i> Consultas al Profesor</h2>
+            <p>¿Tenés alguna duda con los ejercicios o los apuntes? Dejame tu mensaje y te respondo a la brevedad.</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="cens475.rodrigodemoreno@gmail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Tu Consulta:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí acá tu duda o comentario..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+            <div id="form-response" class="form-response"></div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Tecnologías y Prácticas Digitales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<div class="floating-container">
+        <a href="https://youtube.com" target="_blank" class="floating-btn youtube" aria-label="YouTube de la materia">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="floating-btn instagram" aria-label="Instagram de la materia">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/1158417341" target="_blank" class="floating-btn whatsapp" aria-label="WhatsApp de la materia">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
