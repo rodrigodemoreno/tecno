@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Muchas Gracias! - Tecnologías y Prácticas Digitales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para centrar la tarjeta de agradecimiento en pantalla completa */
+        .thank-you-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+        .thank-you-card {
+            max-width: 550px;
+            text-align: center;
+            padding: 40px 30px;
+            border-top: 5px solid #22c55e; /* Borde verde de éxito */
+        }
+        .thank-you-card .icon-success {
+            font-size: 60px;
+            color: #22c55e;
+            margin-bottom: 20px;
+            animation: scaleIn 0.5s ease-out;
+        }
+        .thank-you-card h1 {
+            font-size: 28px;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        .thank-you-card p {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #3b82f6;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .btn-back:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
+        /* Animación de entrada para el ícono */
+        @keyframes scaleIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        /* Adaptación a Modo Oscuro específica */
+        body.dark-mode .thank-you-card {
+            background-color: #1e293b;
+            border-top-color: #10b981;
+        }
+        body.dark-mode .thank-you-card h1 {
+            color: #f1f5f9;
+        }
+        body.dark-mode .thank-you-card p {
+            color: #94a3b8;
+        }
+        body.dark-mode .thank-you-card .icon-success {
+            color: #10b981;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-wrapper">
+        <section class="card thank-you-card">
+            <div class="icon-success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>¡Consulta Recibida con Éxito!</h1>
+            <p>Muchas gracias por comunicarte. Tu mensaje ya fue enviado correctamente al profesor. Voy a estar revisando tu duda para responderte lo antes posible a tu correo electrónico.</p>
+            
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Volver a la Página Principal
+            </a>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
